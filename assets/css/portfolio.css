@@ -1,0 +1,85 @@
+#navigation {
+    background: #666666; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    text-align: right;
+    font-size: 20px;
+    padding: 6px 50px 50px 700px;
+    z-index: 1;
+    margin-bottom: 37px;
+    border-bottom: solid 2px;
+    border-color: #4aaaa5;
+}
+
+#name {
+    background: #4aaaa5;
+    color: white;
+    padding: 10.75px 20px 0.5px 20px;
+    width: 200px;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    margin-left: 200px;
+    top: 0.4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-image: url(../images/intersection.png);
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    background: #666666;
+    border-top: 8px solid #4aaaa5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4aaaa5;
+}
+
+.main-content {
+   margin-left: 200px;
+   width: 960px;
+   background: #ffffff;
+   padding: 20px;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    display: inline-block;
+}
+
+  a {
+    color: #4aaaa5;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 20px;
+    right: 190px;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #096965;
+}
+
+#portfolio {
+    color: #4aaaa5;
+    border-bottom: 3px solid #dddddd;
+    padding-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+#pic5 {
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
