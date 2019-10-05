@@ -117,13 +117,19 @@ html {
 .fa-linkedin-square {
     position: absolute;
     bottom: 6px;
-    left: 80px;
+    left: 55px;
 }
 
-.fa-envelope-square {
+.fa-soundcloud {
+    position: absolute;
+    left: 100px;
+    bottom: 6px;
+}
+
+.fa-envelope {
     position: absolute;
     bottom: 6px;
-    left: 160px;
+    left: 165px;
 }
 
 footer {

@@ -107,11 +107,6 @@ html {
     border-bottom: rgb(96, 123, 190) 1px solid;
 }
 
-.icons {
-    display: flex;
-    flex-direction: row;
-}
-
 .fa-github {
     position: absolute;
     bottom: 6px;
@@ -120,13 +115,19 @@ html {
 .fa-linkedin-square {
     position: absolute;
     bottom: 6px;
-    left: 80px;
+    left: 55px;
 }
 
-.fa-envelope-square {
+.fa-soundcloud {
+    position: absolute;
+    left: 100px;
+    bottom: 6px;
+}
+
+.fa-envelope {
     position: absolute;
     bottom: 6px;
-    left: 160px;
+    left: 165px;
 }
 
 footer {
