@@ -1,0 +1,204 @@
+.header {
+    display: flex;
+    width: 1420px;
+    background-image: linear-gradient(rgb(70, 70, 214), rgb(96, 123, 190));
+    flex-direction: row;
+    padding-left: 30px;
+    justify-content: space-between;
+    border-bottom: solid rgb(248, 102, 44) 2px;
+    border-top: solid rgb(248, 102, 44) 2px;
+    margin-bottom: 20px;
+}
+
+.navigation {
+    position: absolute;
+    left: 510px;
+    top: 7px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 350px;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+    text-decoration: none;
+    align-items: center;
+}
+
+li a:hover {
+    color: rgb(15, 6, 139)
+}
+
+.title {
+    background-image: url(../assets/images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
+    background-position-y: -150px;
+    background-position-x: 250px;
+    display: flex;
+    align-items: space-between;
+    flex-direction: column;
+    height: 80px;
+    border-left: solid rgb(226, 190, 190) 1px;
+    border-right: solid rgb(226, 190, 190) 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 1px;
+    box-shadow: -6px 1px 45px 10px rgba(255,94,1,1);
+}
+
+body {
+    background-image: url(../assets/images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html {
+    height: 100%;
+    margin: auto;
+    width: 100%;
+}
+
+#name {
+    font-size: 30px;
+    position: relative;
+    bottom: 5px;
+}
+
+#position {
+    height: 10%;
+    font-size: 15px;
+    position: relative;
+    font-weight: bold;
+    bottom: 47px;
+    left: 40px;
+}
+
+.links {
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 0px;
+    position: relative;
+    bottom: 0px;
+    margin-right: 40px;
+    background-image: url(../assets/images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
+    background-position-y: -150px;
+    background-position-x: 250px;
+    border-right: solid white 1px;
+    border-left: solid white 1px;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+    box-shadow: 6px 1px 45px 10px rgba(255,94,1,1);
+}
+
+#sites {
+    position: relative;
+    bottom: 22px;
+    border-bottom: rgb(96, 123, 190) 1px solid;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-github {
+    position: absolute;
+    bottom: 6px;
+}
+
+.fa-linkedin-square {
+    position: absolute;
+    bottom: 6px;
+    left: 80px;
+}
+
+.fa-envelope-square {
+    position: absolute;
+    bottom: 6px;
+    left: 160px;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0px;
+    background-image: linear-gradient(rgb(96, 123, 190), rgb(70, 70, 214));
+    width: 100%;
+    border-top: solid rgb(248, 102, 44) 2px;
+    text-align: center;
+}
+
+#copyright {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 224px;
+    background-color: rgb(241, 225, 225, 0.4);
+    width: 980px;
+    align-items: flex-start;
+    height: 643px;
+    border: solid 1px rgb(90, 90, 253);
+    padding-right: -2px;
+    box-shadow: 2px 2px 29px 10px rgba(255,94,1,1);
+}
+
+.portfolio {
+    background-image: linear-gradient(rgb(70, 70, 214), rgb(96, 123, 190));
+    width: 980px;
+    border-bottom: solid rgb(230, 218, 218) 3px;
+}
+
+img {
+    width: 300px;
+    height: 250px;
+    margin: 5px;
+    margin-top: 0;
+    margin-left: -25px;
+    margin-right: 40px;
+    border: 1px solid blue;
+    margin-bottom: 15px;
+    position: relative;
+    left: 2px;
+    bottom: 2px;
+    -webkit-transition: all 0.50s;
+    transition: all 0.50s;
+}
+
+img:hover {
+    border: 1px solid gray;
+    filter: brightness(140%);
+    -webkit-filter: brightness(140%);
+    -moz-filter: brightness(140%);
+    -o-filter: brightness(140%);
+    -ms-filter: brightness(140%);
+    -webkit-transition: all 0.50s;
+    transition: all 0.50s;
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 1000px;
+    flex-wrap: wrap;
+}
+
+#portfolio {
+    margin-left: 16px;
+}

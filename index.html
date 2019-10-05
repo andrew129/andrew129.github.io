@@ -4,46 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Andrew Stiles</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <title>Andrew Stiles Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://use.fontawesome.com/e768a315de.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    
-    <nav id="navigation">
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a> 
-        <a href= "contact.html">Contact</a>
-        <a target="blank" href="Andrews Resume.pdf">Resume</a>
-    </nav>
-
-    <div>
-        <h3 id="sites">Check out my sites</h3>
-        <form method="get" target="blank" action="https://github.com/andrew129"><button id="git" type="submit"></button></form>
-        <form method="get" target="blank" action="https://www.linkedin.com/in/andrew-stiles-12b41167/"><button id="linked" type="submit"></button></form>
+    <header class='header'>
+        <div class='title'>
+            <h1 id='name'>Andrew Stiles</h1>
+            <p id='position'>Web Developer</p>
+        </div>
+        <ul class='navigation'>
+            <li><a id='index' href="./index.html">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a target="blank" href="Andrews Resume.pdf">Resume</a></li>
+        </ul>
+        <div class='links'>
+            <p id='sites'>Check Out my Sites</p>
+            <div class='icons'>
+                <a class='btn' target='blank' href="https://github.com/andrew129"><i class="fa fa-2x fa-github" style='color: black;' aria-hidden="true"></i></a>
+                <a class='btn' target='blank' href="https://www.linkedin.com/in/andrew-stiles-12b41167"><i class="fa fa-2x fa-linkedin-square" style='color: black;' aria-hidden="true"></i></a>
+                <a class='btn' target='blank' href='https://soundcloud.com/en1gmamusic/tracks'><i class="fa fa-2x fa-soundcloud" style='color: black;' aria-hidden="true"></i></a>
+                <a class='btn' target='blank' href='mailto:ndrwstls544@gmail.com'><i class='fa fa-2x fa-envelope'></i></a>
+            </div>
+        </div>
+    </header>
+    <div class='main-content'>
+        <h1 id='about'>About Me</h1>
+        <img src="./assets/images/image1.jpeg" alt="empty">
+        <div class='bio'>
+            <p id='paragraph'>My name is Andrew Stiles, a 24 year old born in Bloomington, Indiana.  Throughout my life, I have lived in Apex, North Carolina for 12 years and now Florida for five years.  So far Florida is my favorite state and I plan on staying here as long as I possibly can.<br><br>I have had many career aspirations throughout my life.  When I was a kid, I loved dinosaurs and insects and wanted nothing more then to be a paleantologist when I grew up.  This cycle lasted for a few years and then I moved on and wanted to be a geologist.  Other aspirations I have had include: video game developer, professional soccer player, and most recently music producer or audio engineer.  As you can see I have a tendency to dream big.  After completing an internship as an audio engineer and having no luck finding a job, I decided to start at the UCF Coding Bootcamp while working part time at a restaurant.  Although it has been challenging, I have learned a lot so far.<br><br>Throughout my time in the coding bootcamp at UCF, I have developed skills in HTML, CSS and especially Javascript.  I have successfully learned how to incorporate interactivity to web pages in both the front end as well as the back end, by creating my own servers.  My greatest strengths are my ability to persevere even when a project gets tough and my strict attention to detail.  One of my greatest accomplishments was building a playable synthesizer using Javascript, JQuery, and the Tone.js api.  In addition to my skills in front and back end web development, I am also a musician and composer.  My music can be found by clicking the soundcloud link above.
+            </p>
+        </div>
     </div>
-
-    <section id="name">
-        <h1>Andrew Stiles</h1>
-    </section>
-
-    <div class="main-content">
-        <section id="about-me">
-            <h1>About Me</h1>
-        </section>
-
-    <img src="file:///Users/andrewstiles/basic-portfolio/assets/images/image1.jpeg" alt="broken">
-
-        <p>My name is Andrew Stiles, a 24 year old born in Bloomington, Indiana.  Throughout my life, I have lived in Apex, North Carolina for 12 years and now Florida for five years.  So far Florida is my favorite state and I plan on staying here as long as I possibly can.</p>
-        <p>I have had many career aspirations throughout my life.  When I was a kid, I loved dinosaurs and insects and wanted nothing more then to be a paleantologist when I grew up.  This cycle lasted for a few years and then I moved on and wanted to be a geologist.  Other aspirations I have had include: video game developer, professional soccer player, and most recently music producer or audio engineer.  As you can see I have a tendency to dream big.  After completing an internship as an audio engineer and having no luck finding a job, I decided to start at the UCF Coding Bootcamp while working part time at a restaurant.  Although it has been challenging, I have learned a lot so far.</p>
-        <p>In my free time I enjoy playing video games(my favorite genre is platformers), relaxing on the beach, making music, and perfecting my coding skills.  One of my flaws is, I am a perfectionist and care too much about quality in my projects, sometimes to the point where I spend the whole day/night working on something and forget to eat.  One of my greatest strenghts is my ability to work hard and constantly challenge myself, that along with my patience have allowed me to perservere through the numerous tough times in my life.  </p>
-        
-    </div>
-
     <footer>
-        <p>copyright</p>
+        <p id='copyright'>© Copyright 2019 Andrew Stiles</p>
     </footer>
-    
-    
+    <script>
+    </script>
 </body>
 </html>

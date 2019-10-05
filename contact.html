@@ -4,61 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Andrew Stiles</title>
-    <link rel="stylesheet" href="assets/css/contact.css">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="assets/contact.css">
+    <script src="https://use.fontawesome.com/e768a315de.js"></script>
 </head>
 <body>
-    
-    <nav id="navigation">
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a> 
-        <a href= "contact.html">Contact</a>
-        <a target="blank" href="Andrews Resume.pdf">Resume</a>
-    </nav>
+    <header class='header'>
+        <div class='title'>
+            <h1 id='name'>Andrew Stiles</h1>
+            <p id='position'>Web Developer</p>
+        </div>
+        <ul class='navigation'>
+            <li><a href="./index.html">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a target="blank" href="Andrews Resume.pdf">Resume</a></li>
+        </ul>
+        <div class='links'>
+            <p id='sites'>Check Out my Sites</p>
+            <div class='icons'>
+                <i href="https://github.com/andrew129" id="git" class="fa fa-2x fa-github" aria-hidden="true"></i>
+                <i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i>
+                <i class="fas fa-2x fa-envelope-square"></i>
+            </div>
+        </div>
+    </header>
+    <div class='main-content'>
+        <h1 id='contact'>Contact Me</h1>
+        <form action='action_page.php'>
+            <label for='name'>Name:</label>
+            <input type='text' id='yourname' name='name' placeholder="Your Name..">
 
-    <!-- <p id="email">Email: ndrwstls544@gmail.com</p>
-    <p id="phone">Phone: 386-631-6993</p> -->
-
-
-    <div>
-        <h3 id="sites">Check out my sites</h3>
-        <form method="get" target="blank" action="https://github.com/andrew129"><button id="git" type="submit"></button></form>
-        <form method="get" target="blank" action="https://www.linkedin.com/in/andrew-stiles-12b41167/"><button id="linked" type="submit"></button></form>
-    </div>
-    
-    <section id="name">
-        <h1>Andrew Stiles</h1>
-    </section>
-
-<div class="main-content">
-
-    <h1 id="contact">Contact</h1>
-
-    <div class="container">
-        <form action="action_page.php">
-
-            <label for="name">Name</label>
-            <input type="text" id="yourname" name="name" placeholder="Your Name..">
-
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="example@gmail.com">
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Write something here...">
+            <label for='email'>Email:</label>
+            <input type='text' id='email' name='email' placeholder="example@gmail.com">
             
+            <label for='message'>Message:</label>
+            <textarea type='text' id='message' name='message' placeholder="Write something here...">
+
             </textarea>
 
-            <input type="submit" value="Submit">
+            <input type='submit' id='submit' value='Submit'>
 
         </form>
-    </div>  
-
-</div>
-
+    </div>
     <footer>
-        <p>copyright</p>
+        <p id='copyright'>© Copyright 2019 Andrew Stiles</p>
     </footer>
-
-    
 </body>
 </html>
