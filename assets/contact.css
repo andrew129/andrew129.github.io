@@ -1,217 +1,341 @@
 .header {
-    display: flex;
-    width: 1420px;
-    background-image: linear-gradient(rgb(70, 70, 214), rgb(96, 123, 190));
-    flex-direction: row;
-    padding-left: 30px;
-    justify-content: space-between;
-    border-bottom: solid rgb(248, 102, 44) 2px;
-    border-top: solid rgb(248, 102, 44) 2px;
-    margin-bottom: 160px;
+	display: flex;
+	width: 1420px;
+	background-image: linear-gradient(rgb(70, 70, 214), rgb(96, 123, 190));
+	flex-direction: row;
+	padding-left: 30px;
+	justify-content: space-between;
+	border-bottom: solid rgb(248, 102, 44) 2px;
+	border-top: solid rgb(248, 102, 44) 2px;
+	margin-bottom: 160px;
 }
 
 ul {
-    display: flex;
-    list-style-type: none;
-    width: 350px;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 20px;
-    text-decoration: none;
-    align-items: center;
-    position: absolute;
-    left: 510px;
-    top: 6px;
+	display: flex;
+	list-style-type: none;
+	width: 350px;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 20px;
+	text-decoration: none;
+	align-items: center;
+	position: absolute;
+	left: 510px;
+	top: 6px;
 }
 
 li a:hover {
-    color: rgb(15, 6, 139)
+	color: rgb(15, 6, 139);
 }
 
 .title {
-    background-image: url(../assets/images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
-    background-position-y: -150px;
-    background-position-x: 250px;
-    display: flex;
-    align-items: space-between;
-    flex-direction: column;
-    height: 80px;
-    border-left: solid rgb(226, 190, 190) 1px;
-    border-right: solid rgb(226, 190, 190) 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 1px;
-    box-shadow: -6px 1px 45px 10px rgba(255,94,1,1);
+	background-image: url(../assets/images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
+	background-position-y: -150px;
+	background-position-x: 250px;
+	display: flex;
+	align-items: space-between;
+	flex-direction: column;
+	height: 80px;
+	border-left: solid rgb(226, 190, 190) 1px;
+	border-right: solid rgb(226, 190, 190) 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 1px;
+	box-shadow: -6px 1px 45px 10px rgba(255, 94, 1, 1);
 }
 
 body {
-    background-image: url(../assets/images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
-    background-position: center center;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background-image: url(../assets/images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
+	background-position: center center;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 html {
-    height: 100%;
-    margin: auto;
-    width: 100%;
+	height: 100%;
+	margin: auto;
+	width: 100%;
 }
 
 #name {
-    font-size: 30px;
-    position: relative;
-    bottom: 5px;
+	font-size: 30px;
+	position: relative;
+	bottom: 5px;
 }
 
 #position {
-    height: 10%;
-    font-size: 15px;
-    position: absolute;
-    font-weight: bold;
-    bottom: 680px;
-    left: 47px;
+	height: 10%;
+	font-size: 15px;
+	position: absolute;
+	font-weight: bold;
+	bottom: 680px;
+	left: 47px;
 }
 
 .links {
-    display: flex;
-    font-size: 22px;
-    font-weight: bold;
-    padding-top: 0px;
-    position: relative;
-    bottom: 0px;
-    margin-right: 40px;
-    background-image: url(../assets/images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
-    background-position-y: -150px;
-    background-position-x: 250px;
-    border-right: solid white 1px;
-    border-left: solid white 1px;
-    flex-direction: column;
-    height: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    width: 200px;
-    box-shadow: 6px 1px 45px 10px rgba(255,94,1,1);
+	display: flex;
+	font-size: 22px;
+	font-weight: bold;
+	padding-top: 0px;
+	position: relative;
+	bottom: 0px;
+	margin-right: 40px;
+	background-image: url(../assets/images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
+	background-position-y: -150px;
+	background-position-x: 250px;
+	border-right: solid white 1px;
+	border-left: solid white 1px;
+	flex-direction: column;
+	height: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	width: 200px;
+	box-shadow: 6px 1px 45px 10px rgba(255, 94, 1, 1);
 }
 
 #sites {
-    position: relative;
-    bottom: 22px;
-    border-bottom: rgb(96, 123, 190) 1px solid;
-}
-
-.icons {
-    display: flex;
-    flex-direction: row;
-}
-
-.fa-github {
-    position: absolute;
-    bottom: 6px;
-}
-
-.fa-linkedin-square {
-    position: absolute;
-    bottom: 6px;
-    left: 55px;
-}
-
-.fa-soundcloud {
-    position: absolute;
-    left: 100px;
-    bottom: 6px;
-}
-
-.fa-envelope {
-    position: absolute;
-    bottom: 6px;
-    left: 165px;
+	position: relative;
+	margin: 0px;
+	border-bottom: rgb(96, 123, 190) 1px solid;
 }
 
 footer {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 0px;
-    background-image: linear-gradient(rgb(96, 123, 190), rgb(70, 70, 214));
-    width: 100%;
-    border-top: solid rgb(248, 102, 44) 2px;
-    text-align: center;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+
+	background-image: linear-gradient(rgb(96, 123, 190), rgb(70, 70, 214));
+	width: 100%;
+	border-top: solid rgb(248, 102, 44) 2px;
+	text-align: center;
 }
 
 #copyright {
-    font-weight: bold;
-    font-size: 15px;
+	font-weight: bold;
+	font-size: 15px;
 }
 
 input[type=submit] {
-    background-image: linear-gradient(rgb(75, 75, 204), rgb(96, 123, 190));
-    padding: 10px 20px 10px 20px;
-    color: white;
-    font-size: 21px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    color: black;
-    width: 97%;
+	background-image: linear-gradient(rgb(75, 75, 204), rgb(96, 123, 190));
+	padding: 10px 20px 10px 20px;
+	color: white;
+	font-size: 21px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	color: black;
+	width: 97%;
 }
 
 input[type=submit]:hover {
-    background: #1a2a6e;
+	background: #1a2a6e;
 }
 
-input[type=text], select, textarea {
-    width: 94.5%;
-    padding: 5px 3px 10px 8px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    margin-top: 8px; 
-    margin-bottom: 20px;
-    margin-left: 10px;
+input[type=text],
+select,
+textarea {
+	width: 94.5%;
+	padding: 5px 3px 10px 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-top: 8px;
+	margin-bottom: 20px;
+	margin-left: 10px;
 }
 
 label {
-    margin-left: 10px;
-    font-size: 20px;
+	margin-left: 10px;
+	font-size: 20px;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    background: rgb(255, 255, 255, 0.4);
-    width: 600px;
-    border: solid 1px rgb(90, 90, 253);
-    box-shadow: 2px 2px 29px 12px rgba(255,94,1,1);
-    margin-left: 426px;
-    height: 300px;
+	display: flex;
+	flex-direction: column;
+	background: rgb(255, 255, 255, 0.4);
+	width: 600px;
+	border: solid 1px rgb(90, 90, 253);
+	box-shadow: 2px 2px 29px 12px rgba(255, 94, 1, 1);
+	margin-left: 426px;
+	height: 300px;
 }
 
 #email {
-    margin-left: 160px;
-    font-size: 20px;
-    margin-top: 60px;
+	margin-left: 160px;
+	font-size: 20px;
+	margin-top: 60px;
 }
 
 #number {
-    font-size: 20px;
-    margin-left: 160px;
+	font-size: 20px;
+	margin-left: 160px;
 }
 
-
 #contact {
-    background-image: linear-gradient(rgb(70, 70, 214), rgb(96, 123, 190));
-    margin:0;
-    padding:0;
-    height: 50px;
-    width: 98.5%;
-    align-self: flex-start;
-    padding-bottom: -10px;
-    border-bottom: solid rgb(230, 218, 218) 2px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    padding-top: 10px;
+	background-image: linear-gradient(rgb(70, 70, 214), rgb(96, 123, 190));
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	width: 98.5%;
+	align-self: flex-start;
+	padding-bottom: -10px;
+	border-bottom: solid rgb(230, 218, 218) 2px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.dod {
+	display: none;
+}
+@media (max-width: 767px) {
+	body {
+		padding-bottom: 30px !important;
+		height: auto !important;
+		background-repeat: repeat;
+	}
+
+	#position {
+		position: absolute;
+		right: -2px;
+	}
+
+	.header {
+		margin-bottom: 60px !important;
+		width: 100% !important;
+		display: block !important;
+		padding-left: 0px !important;
+	}
+	.main-content {
+		width: 100% !important;
+		height: auto !important;
+		margin: 0 auto !important;
+		border: none !important;
+		margin-top: 150px !important;
+	}
+	#position {
+		left: 0px !important;
+	}
+	#contact {
+		width: 100% !important;
+		padding-left: 0px !important;
+		text-align: center !important;
+		border-bottom: none !important;
+	}
+	.main-content img {
+		margin: 0 auto !important;
+	}
+	ul {
+		width: 100% !important;
+	}
+	footer {
+		bottom: 0px !important;
+	}
+	.navigation {
+		left: 0px !important;
+		top: auto !important;
+		position: inherit !important;
+	}
+	ul li {
+		right: 0px !important;
+		margin-right: 10px !important;
+	}
+	ul {
+		padding-left: 0px !important;
+		margin-left: 0px !important;
+	}
+	.title {
+		right: 0px !important;
+		background-position-x: 0px !important;
+		border: none !important;
+		padding: 0px !important;
+		text-align: center !important;
+	}
+	#paragraph {
+		margin-bottom: 0px !important;
+		margin: 10px !important;
+	}
+	#sites {
+		display: none !important;
+	}
+	.links {
+		top: 0px !important;
+		width: 100% !important;
+		left: 0px !important;
+		margin: 0 auto !important;
+		padding: 0px;
+		flex-direction: inherit !important;
+		box-shadow: none !important;
+		background-position: unset !important;
+		height: 40px;
+		border: none;
+		background-image: linear-gradient(rgb(96, 123, 190), rgb(70, 70, 214));
+	}
+	.icons a {
+		left: 0px !important;
+	}
+	.icons {
+		margin: 0 28% !important;
+	}
+	.dom {
+		display: none !important;
+	}
+	.dod {
+		display: block !important;
+	}
+	ul {
+		justify-content: center;
+		margin-left: 15px;
+	}
+
+	ul li {
+		position: relative;
+		right: 300px;
+		top: 3px;
+		font-size: 18px;
+		margin-right: 30px;
+	}
+
+	#sites {
+		opacity: 0;
+	}
+
+	.icons a {
+		font-size: 13px !important;
+		position: relative;
+		top: 43px;
+		left: 440px;
+		z-index: 2;
+		margin: 0;
+	}
+
+	.fa-github {
+		position: absolute;
+		bottom: 6px;
+	}
+
+	.fa-linkedin-square {
+		position: absolute;
+		bottom: 6px;
+		left: 40px;
+	}
+
+	.fa-soundcloud {
+		position: absolute;
+		left: 85px;
+		bottom: 6px;
+	}
+
+	.fa-envelope {
+		position: absolute;
+		bottom: 6px;
+		left: 145px;
+	}
+	#email,
+	#number {
+		margin: 20px auto !important;
+	}
 }
