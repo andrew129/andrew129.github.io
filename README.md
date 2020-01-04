@@ -2,6 +2,6 @@
 
 Check out my portfolio to see all my best projects and learn more about who I am.
 
-link: andrew129.github.io
+link: https://andrew129.github.io
 
 
