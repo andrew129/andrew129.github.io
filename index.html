@@ -10,18 +10,21 @@
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Great+Vibes&family=Sacramento&family=Yellowtail&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class='header'>
         <div class='title'>
-            <h1 id='name'>Andrew Stiles</h1>
-            <p id='position'>Full Stack Web Developer</p>
+            <div class='title-names'>
+                <h1 id='name'>Andrew Stiles</h1>
+                <p id='position'>Full Stack Web Developer</p>
+            </div>
         </div>
         <ul class='navigation'>
-            <li><a id='index' href="./index.html">About</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a target="blank" href="Andrews Resume.pdf">Resume</a></li>
+            <li><a id='index' href="./index.html"><button>About</button></a></li>
+            <li><a href="./portfolio.html"><button>Portfolio</button></a></li>
+            <li><a href="./contact.html"><button>Contact</button></a></li>
+            <li><a target="blank" href="Andrews Resume.pdf"><button>Resume</button></a></li>
         </ul>
         <div class='links dom'>
             <p id='sites'>Check Out my Sites</p>
@@ -33,34 +36,25 @@
             </div>
         </div>
     </header>
-    <div class='main-content'>
-        <h1 id='about'>About Me</h1>
-        <img src="./assets/images/image1.jpeg" alt="empty">
-        <div class='bio'>
-            <p id='paragraph'>Throughout my time in the coding bootcamp at UCF, I have developed skills in HTML, CSS and especially Javascript.  I have successfully learned how to incorporate interactivity to web pages in both the front end as well as the back end, by creating my own servers.  My greatest strengths are my ability to persevere even when a project gets tough and my strict attention to detail.  One of my greatest accomplishments was building my own photography website called Phocus.  I built the front and back end by myself and implemented strategies I learned in the bootcamp.   In addition to my skills in full stack web development, I am also a musician and composer.  My music can be found by clicking the soundcloud link above.
-            </p>
-        </div>
-        <!-- <h3 id='skills'>Skills</h3> -->
-        <ul style='list-style-type: none;'>
-            <li>
-                <i class="fab fa-node"></i>
-            </li>
-        </ul>
-    </div>
-    <footer class="dod">
-        <p id='copyright'>© Copyright 2019 Andrew Stiles</p>
-        <div class='links'>
-            <p id='sites'>Check Out my Sites</p>
-            <div class='icons'>
-                <a class='btn' target='blank' href="https://github.com/andrew129"><i class="fa fa-2x fa-github"
-                        style='color: black;' aria-hidden="true"></i></a>
-                <a class='btn' target='blank' href="https://www.linkedin.com/in/andrew-stiles-12b41167"><i
-                        class="fa fa-2x fa-linkedin-square" style='color: black;' aria-hidden="true"></i></a>
-                <a class='btn' target='blank' href='https://soundcloud.com/en1gmamusic/tracks'><i class="fa fa-2x fa-soundcloud"
-                        style='color: black;' aria-hidden="true"></i></a>
-                <a class='btn' target='blank' href='mailto:ndrwstls544@gmail.com'><i class='fa fa-2x fa-envelope'
-                        style='color: black;' aria-hidden="true"></i></a>
+    <div class='new-row'>
+        <div class='outer-eclipse'>
+            <div class='eclipse'>
+                <div class='outer-ring'>
+                    <div class='main-content'>
+                        <img src="./assets/images/image1.jpeg" alt="empty">
+                        <h1 class='about-me'>About Me</h1>
+                        <div class='bio'>
+                            <p id='paragraph'>
+                                Throughout my time in the coding bootcamp at UCF, I have developed skills in HTML, CSS and especially Javascript.  I have successfully learned how to incorporate interactivity to web pages in both the front end as well as the back end, by creating my own servers.  My greatest strengths are my ability to persevere even when a project gets tough and my strict attention to detail.  One of my greatest accomplishments was building my own photography website called Phocus.  I built the front and back end by myself and implemented strategies I learned in the bootcamp.   In addition to my skills in full stack web development, I am also a musician and composer.  My music can be found by clicking the soundcloud link above.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+    <footer>
+        <p id='copyright'>© Copyright 2020 Andrew Stiles</p>
     </footer>
     <script>
     </script>
