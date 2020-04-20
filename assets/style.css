@@ -39,7 +39,7 @@ li a button {
 
 li a button:hover {
 	color: rgb(15, 6, 139);
-	animation: changePosition 2s ease-out alternate;
+	animation: changePosition 2s ease-out alternate-reverse;
 	filter: brightness(110%);
 }
 
@@ -48,7 +48,7 @@ li a button:hover {
 		background-position-x: 250px;
 	}
 	100% {
-		background-position-x: 90px;
+		background-position-x: 100px;
 	}
 }
 
@@ -89,6 +89,10 @@ li a button:hover {
 	justify-content: center;
 	align-items: center;
 	height: 100%;
+}
+
+.animate {
+	transform: rotateZ(180deg);
 }
 
 .new-row {
@@ -133,13 +137,16 @@ html {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	margin-top: 30px;
 	margin-left: 10px;
 	border-radius: 100px;
+	text-align: center;
 }
 
 #paragraph {
 	line-height: 20px;
+	font-size: 16px;
 }
 
 .about-me {
@@ -158,7 +165,7 @@ html {
 	align-items: center;
 	border: solid 1px rgba(255, 94, 1, 1);
 	border-radius: 500px;
-	box-shadow: 15px 2px 29px 15px rgba(255, 94, 1, 1);
+	box-shadow: 15px 2px 20px 15px rgba(255, 94, 1, 1);
 	text-align: center;
 }
 
@@ -176,12 +183,12 @@ html {
 .eclipse {
 	height: 610px;
 	width: 630px;
-	border: rgb(224, 192, 9) solid 1px;
+	border:  rgb(255, 208, 0) solid 1px;
 	border-radius: 500px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	box-shadow: 17px 2px 20px 20px rgb(224, 192, 9);
+	box-shadow: 17px 2px 22px 22px rgb(255, 251, 0);
 }
 
 img {
@@ -193,6 +200,10 @@ img {
 	box-shadow: 10px 17px 30px 3px rgba(46, 45, 45, 0.75);
 	margin-top: 20px;
 }
+
+/* img:hover {
+	transform: rotateZ(180deg);
+} */
 
 .links {
 	display: flex;

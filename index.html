@@ -41,12 +41,12 @@
             <div class='eclipse'>
                 <div class='outer-ring'>
                     <div class='main-content'>
-                        <img src="./assets/images/image1.jpeg" alt="empty">
+                        <img src="assets/images/image1.jpeg" alt="empty">
                         <h1 class='about-me'>About Me</h1>
                         <div class='bio'>
-                            <p id='paragraph'>
+                            <span id='paragraph'>
                                 Throughout my time in the coding bootcamp at UCF, I have developed skills in HTML, CSS and especially Javascript.  I have successfully learned how to incorporate interactivity to web pages in both the front end as well as the back end, by creating my own servers.  My greatest strengths are my ability to persevere even when a project gets tough and my strict attention to detail.  One of my greatest accomplishments was building my own photography website called Phocus.  I built the front and back end by myself and implemented strategies I learned in the bootcamp.   In addition to my skills in full stack web development, I am also a musician and composer.  My music can be found by clicking the soundcloud link above.
-                            </p>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -58,17 +58,20 @@
     </footer>
     <script>
         let positionArr = ['Web Developer', 'Tutor', 'Music Producer'];
+        let imageArr = ['assets/images/image1.jpeg', 'assets/images/andrew-cafe.jpg']
         let count = 0;
+        let imageCount = 0
         let position = document.getElementById('position');
+        let image = document.querySelector('img')
 
         function slideShow() {
             increment()
-            setInterval(increment, 3000)
+            setInterval(increment, 4000)
         }
+
         
         function increment() {
-            let currentPosition = positionArr[count]
-            position.textContent = currentPosition
+            position.textContent = positionArr[count]
             if (count === positionArr.length - 1) {
                 count = 0
             }
@@ -78,6 +81,7 @@
         }
 
         slideShow()
+        // alternateImage()
 
     </script>
 </body>
