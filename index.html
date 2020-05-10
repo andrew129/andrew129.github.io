@@ -21,7 +21,7 @@
             </div>
         </div>
         <ul class='navigation'>
-            <li><a id='index' href="./index.html"><button>About</button></a></li>
+            <li><a href="./index.html"><button>About</button></a></li>
             <li><a href="./portfolio.html"><button>Portfolio</button></a></li>
             <li><a href="./contact.html"><button>Contact</button></a></li>
             <li><a target="blank" href="Andrews Resume.pdf"><button>Resume</button></a></li>
@@ -41,7 +41,9 @@
             <div class='eclipse'>
                 <div class='outer-ring'>
                     <div class='main-content'>
-                        <img src="assets/images/image1.jpeg" alt="empty">
+                        <div class='img-container'>
+                            <img>
+                        </div>
                         <h1 class='about-me'>About Me</h1>
                         <div class='bio'>
                             <span id='paragraph'>
@@ -57,18 +59,43 @@
         <p id='copyright'>© Copyright 2020 Andrew Stiles</p>
     </footer>
     <script>
-        let positionArr = ['Web Developer', 'Tutor', 'Music Producer'];
+        let positionArr = ['Full Stack Web Developer', 'Tutor', 'Music Producer'];
         let imageArr = ['assets/images/image1.jpeg', 'assets/images/andrew-cafe.jpg']
         let count = 0;
+        let imageCount = 0;
         let position = document.getElementById('position');
         let image = document.querySelector('img')
 
         function slideShow() {
             increment()
+            changePicture()
             setInterval(increment, 4000)
+            setInterval(changePicture, 11000)
         }
 
-        
+        function changePicture() {
+            console.log('hello')
+            image.classList.remove('fade-out')
+            image.classList.add('fade-in')
+            image.src = imageArr[imageCount]
+            setTimeout(() => {
+                if (imageCount === imageArr.length - 1) {
+                    image.classList.remove('fade-in')
+                    imageCount = 0
+                    setTimeout(() => {
+                        image.classList.add('fade-out')
+                    }, 3000)
+                }
+                else {
+                    image.classList.remove('fade-in')
+                    imageCount++
+                    setTimeout(() => {
+                        image.classList.add('fade-out')
+                    }, 3000)
+                }
+            }, 4000)
+        }
+
         function increment() {
             position.textContent = positionArr[count]
             if (count === positionArr.length - 1) {
