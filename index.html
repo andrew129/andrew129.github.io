@@ -70,11 +70,10 @@
             increment()
             changePicture()
             setInterval(increment, 4000)
-            setInterval(changePicture, 11000)
+            setInterval(changePicture, 13000)
         }
 
         function changePicture() {
-            console.log('hello')
             image.classList.remove('fade-out')
             image.classList.add('fade-in')
             image.src = imageArr[imageCount]
@@ -93,7 +92,7 @@
                         image.classList.add('fade-out')
                     }, 3000)
                 }
-            }, 4000)
+            }, 5000)
         }
 
         function increment() {

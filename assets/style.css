@@ -103,13 +103,13 @@ li a button:hover {
 
 .fade-in {
 	opacity: 0;
-	animation: fadein 4s ease-in-out;
+	animation: fadein 5s ease-in-out;
 	animation-iteration-count: 1;
 }
 
 .fade-out {
 	opacity: 1;
-	animation: fadeout 4s ease-in-out;
+	animation: fadeout 5s ease-in-out;
 	animation-iteration-count: 1;
 }
 
