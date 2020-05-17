@@ -7,18 +7,21 @@
     <title>Contact Me</title>
     <link rel="stylesheet" href="assets/contact.css">
     <script src="https://use.fontawesome.com/e768a315de.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Great+Vibes&family=Sacramento&family=Yellowtail&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class='header'>
         <div class='title'>
-            <h1 id='name'>Andrew Stiles</h1>
-            <p id='position'>Full Stack Web Developer</p>
+            <div class='title-names'>
+                <h1 id='name'>Andrew Stiles</h1>
+                <p id='position'></p>
+            </div>
         </div>
         <ul class='navigation'>
-            <li><a href="./index.html">About</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a target="blank" href="Andrews Resume.pdf">Resume</a></li>
+            <li><a href="./index.html"><button>About</button></a></li>
+            <li><a href="./portfolio.html"><button>Portfolio</button></a></li>
+            <li><a href="./contact.html"><button>Contact</button></a></li>
+            <li><a target="blank" href="Andrews Resume.pdf"><button>Resume</button></a></li>
         </ul>
         <div class='links dom'>
             <p id='sites'>Check Out my Sites</p>
@@ -32,26 +35,41 @@
     </header>
     <div class='main-content'>
         <h1 id='contact'>Contact Me</h1>
-        <p id='email'><strong>Email:</strong> ndrwstls544@gmail.com</p>
-        <p id='number'><strong>Phone Number:</strong> 386-631-6993</p>
+        <form>
+            <label for='name'>Name:</label>
+            <input type='text' id='yourname' name='name' placeholder="Your Name..">
+
+            <label for='email'>Email:</label>
+            <input type='text' id='email' name='email' placeholder="example@gmail.com">
+            
+            <label for='message'>Message:</label>
+            <textarea type='text' id='message' name='message' placeholder="Write something here...">
+            </textarea>
+
+            <input type='submit' id='submit' value='Submit'>
+        </form>
     </div>
-<footer class="dod">
-    <p id='copyright'>© Copyright 2019 Andrew Stiles</p>
-    <div class='links'>
-        <p id='sites'>Check Out my Sites</p>
-        <div class='icons'>
-            <a class='btn' target='blank' href="https://github.com/andrew129"><i class="fa fa-2x fa-github"
-                    style='color: black;' aria-hidden="true"></i></a>
-            <a class='btn' target='blank' href="https://www.linkedin.com/in/andrew-stiles-12b41167"><i
-                    class="fa fa-2x fa-linkedin-square" style='color: black;' aria-hidden="true"></i></a>
-            <a class='btn' target='blank' href='https://soundcloud.com/en1gmamusic/tracks'><i
-                    class="fa fa-2x fa-soundcloud" style='color: black;' aria-hidden="true"></i></a>
-            <a class='btn' target='blank' href='mailto:ndrwstls544@gmail.com'><i class='fa fa-2x fa-envelope'
-                    style='color: black;' aria-hidden="true"></i></a>
-        </div>
-</footer>
     <script>
+        let positionArr = ['Full Stack Web Developer', 'Tutor', 'Music Producer'];
+        let count = 0;
+        let position = document.getElementById('position');
+
+        function slideShow() {
+            increment()
+            setInterval(increment, 4000)
+        }
         
+        function increment() {
+            position.textContent = positionArr[count]
+            if (count === positionArr.length - 1) {
+                count = 0
+            }
+            else {
+                count++
+            }
+        }
+
+        slideShow()
     </script>
 </body>
 </html>
