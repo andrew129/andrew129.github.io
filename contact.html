@@ -33,21 +33,23 @@
             </div>
         </div>
     </header>
-    <div class='main-content'>
-        <h1 id='contact'>Contact Me</h1>
-        <form>
-            <label id='name-label' for='name'>Name:</label>
-            <input type='text' id='yourname' name='name' placeholder="Your Name..">
-
-            <label id='email-label' for='email'>Email:</label>
-            <input type='text' id='email' name='email' placeholder="example@gmail.com">
+    <div class='new-row'>
+        <div class='main-content'>
+            <div id='contact-div'>
+                <h1 id='contact'>Contact Me</h1>
+            </div>
+            <form class='submit-form' action="https://formspree.io/xjvagyzj" method='POST'>
+                <input type='text' id='yourname' name='subject' placeholder="Your Subject...">
+                <input type='text' id='email' name='email' placeholder="Your Email...">
+                <textarea type='text' id='message' name='message' placeholder="Write something here...">
+                </textarea>
             
-            <label for='message'>Message:</label>
-            <textarea type='text' id='message' name='message' placeholder="Write something here...">
-            </textarea>
-
-            <input type='submit' id='submit' value='Submit'>
-        </form>
+                <button type='submit' id='submit' name='submit' value='submit'>Send Email</button>
+            </form>
+            <div id='status-div'>
+                <p id='status'><mark></mark></p>
+            </div>
+        </div>
     </div>
     <script>
         let positionArr = ['Full Stack Web Developer', 'Tutor', 'Music Producer'];
@@ -69,7 +71,40 @@
             }
         }
 
+        function sendEmail(e) {
+            const name = document.getElementById('yourname').value.trim()
+            const email = document.getElementById('email').value.trim()
+            const message = document.getElementById('message').value.trim()
+            const status = document.getElementById('status')
+
+            name.value = ''
+            email.value = ''
+            message.value = ''
+            status.textContent = ''
+
+            if (name !== '' && email !== '' && message !== '' && email.includes('@') && email.includes('.') && message.length > 5 && name.length > 2) {
+                console.log('submit')
+            }
+            else if (name === '' || email === '' || message === '') {
+                e.preventDefault()
+                status.textContent = 'Error: Make sure all fields are filled out'
+            }
+            else if (!email.includes('@') || !email.includes('.')) {
+                e.preventDefault()
+                status.textContent = 'Error: Your email is invalid'
+            }
+            else if (message.length < 5) {
+                e.preventDefault()
+                status.textContent = 'Error: Your Message is too short'
+            }
+            else if (name.length < 2) {
+                e.preventDefault()
+                status.textContent = 'Error: Your Subject is too Short'
+            }
+        }
+
         slideShow()
+        document.getElementById('submit').addEventListener('click', sendEmail)
     </script>
 </body>
 </html>
