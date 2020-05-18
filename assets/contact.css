@@ -20,7 +20,7 @@
 	align-items: center;
 	text-decoration: none;
 	outline: none;
-	margin-right: 30px;
+	margin-right: 45px;
 }
 
 .icons {
@@ -159,17 +159,6 @@ html {
 }
 
 
-/* button[type=submit] {
-	background-image: linear-gradient(rgb(75, 75, 204), rgb(96, 123, 190));
-	color: white;
-	font-size: 21px;
-	transition: all 0.5s;
-	cursor: pointer;
-	border-radius: 20px;
-	animation: move-out 1.5s ease-out;
-	width: 94.5%;
-} */
-
 @keyframes move-in {
 	0%{transform: translateX(-75px); opacity: 0}
 	50%{opacity: 0.5}
@@ -183,26 +172,11 @@ html {
 	100%{transform: translateX(0); opacity: 1}
 }
 
-/* button[type=submit]:hover {
-	background: #273ea7;
-} */
 
 #status {
 	color: rgb(255, 0, 0);
 	background-color: rgb(224, 165, 165);
 }
-
-/* input,
-textarea {
-	width: 94.5%;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	margin-top: 20px;
-} */
-
-/* input {
-	height: 20px;
-} */
 
 .new-row {
 	display: flex;
@@ -244,6 +218,7 @@ textarea {
 	width: 94.5%;
 	padding-left: 5px;
 	margin-top: 30px;
+	border: 1px solid #ccc;
 }
 
 #contact {
@@ -258,6 +233,7 @@ textarea {
 	padding-left: 10px;
 	border-radius: 5px;
 	animation: move-in 1.5s ease-out;
+	border: 1px solid #ccc;
 }
 
 #email {
@@ -269,6 +245,7 @@ textarea {
 	width: 94.5%;
 	padding-left: 10px;
 	margin-top: 30px;
+	border: 1px solid #ccc;
 }
 
 #submit {
