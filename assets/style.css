@@ -1,10 +1,9 @@
 .header {
 	display: flex;
-	width: 1410px;
+	width: 100vw;
 	background-image: linear-gradient(rgb(70, 70, 214), rgb(96, 123, 190));
 	flex-direction: row;
 	height: 85px;
-	padding-left: 30px;
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: solid white 1px;
@@ -20,7 +19,7 @@
 	align-items: center;
 	text-decoration: none;
 	outline: none;
-	margin-right: 45px;
+	margin-right: 35px;
 }
 
 li a button {
@@ -69,6 +68,7 @@ li a button:hover {
 	width: 15%;
 	border-left: solid rgb(226, 190, 190) 1px;
 	border-right: solid rgb(226, 190, 190) 1px;
+	margin-left: 30px;
 	padding-left: 10px;
 	padding-right: 10px;
 	box-shadow: -6px 1px 45px 10px rgba(255, 94, 1, 1);
