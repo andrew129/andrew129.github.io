@@ -298,6 +298,12 @@ img {
 		background: none;
 		box-shadow: 0 0 10px 13px rgb(104, 104, 253);
 	}
+	.navigation {
+		display: none;
+	}
+	.links {
+		display: none;
+	}
 	.eclipse {
 		width: 270px;
 		height: 880px;
