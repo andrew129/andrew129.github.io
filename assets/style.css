@@ -298,6 +298,10 @@ img {
 		background: none;
 		box-shadow: 0 0 10px 13px rgb(104, 104, 253);
 	}
+	body {
+		background-position: center center;
+		background-size: 100vh;
+	}
 	.eclipse {
 		width: 270px;
 		height: 880px;
@@ -308,9 +312,6 @@ img {
 		height: 910px;
 		margin-bottom: 30px;
 		box-shadow: 0 0 8px 20px rgba(255, 94, 1, 1);
-	}
-	body {
-		margin-bottom: 20px !important;
 	}
 	.title {
 		margin: 0;
