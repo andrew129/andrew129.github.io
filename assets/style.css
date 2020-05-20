@@ -298,9 +298,6 @@ img {
 		background: none;
 		box-shadow: 0 0 10px 13px rgb(104, 104, 253);
 	}
-	body {
-		background-size: 100vh;
-	}
 	.eclipse {
 		width: 270px;
 		height: 880px;
