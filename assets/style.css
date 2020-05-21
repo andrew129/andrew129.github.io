@@ -264,7 +264,7 @@ img {
 	font-family: 'Yellowtail', cursive;
 }
 
-#hamburger, .header label {
+#hamburger,  #ham-label {
 	display: none;
 }
 
@@ -309,17 +309,15 @@ img {
 	#position {
 		font-size: 15px;
 	}
-	#hamburger, .header label {
-		display: block;
+	#ham-label {
+		display: inline-block;
 		cursor: pointer;
-		font-size: 35px;
+		font-size: 2em;
 		background-image: url(../assets/images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
-		background-position: 300px;
+		background-position: 780px;
 		-webkit-text-fill-color: transparent;
 		-webkit-background-clip: text !important;
 		background-clip: text;
-		position: relative;
-		left: 90px;
 	}
 
 	.navigation {
@@ -332,24 +330,18 @@ img {
 		justify-content: space-between;
 	}
 
-	.header label { 
-		display: inline-block; 
-		color: white;
-		background: #a02620;
-		font-style: normal;
-		font-size: 2em;
-		padding: 10px;
+	.hamburger-holder {
+		height: 100%;
+		border-left: solid white 1px;
+		width: 80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
-	.header input {
-		visibility: hidden;
-	}
-
-	.header input:checked ~ .navigation { display: block; z-index: 1; margin-top: 280px; }
+	#ham-label:checked ~ .navigation { display: block; z-index: 1; margin-top: 280px; }
 
 	li a {
-		margin: 0;
-		border-radius: 0;
 		box-sizing: border-box;
     	display: block;
 		text-decoration: none;
