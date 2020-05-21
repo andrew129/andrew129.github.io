@@ -302,13 +302,63 @@ img {
 		background: none;
 		box-shadow: 0 0 10px 13px rgb(104, 104, 253);
 	}
+
+	#name {
+		font-size: 25px;
+	}
+	#position {
+		font-size: 15px;
+	}
 	#hamburger, .header label {
 		display: block;
+		cursor: pointer;
+		font-size: 35px;
+		background-image: url(../assets/images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
+		background-position: 300px;
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text !important;
+		background-clip: text;
+		position: relative;
+		left: 90px;
 	}
+
 	.navigation {
 		display: none;
 	}
-	.header input:checked ~ .navigation { display: block; }
+
+	.header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.header label { 
+		display: inline-block; 
+		color: white;
+		background: #a02620;
+		font-style: normal;
+		font-size: 2em;
+		padding: 10px;
+	}
+
+	.header input {
+		visibility: hidden;
+	}
+
+	.header input:checked ~ .navigation { display: block; z-index: 1; margin-top: 280px; }
+
+	li a {
+		margin: 0;
+		border-radius: 0;
+		box-sizing: border-box;
+    	display: block;
+		text-decoration: none;
+	}
+
+	li a button {
+		border-radius: 0;
+		margin: 0;
+	}
 
 	.links {
 		display: none;
@@ -322,10 +372,11 @@ img {
 		width: 280px;
 		height: 910px;
 		margin-bottom: 30px;
-		box-shadow: 0 0 8px 20px rgba(255, 94, 1, 1);
+		box-shadow: 0 0 8px 10px rgba(255, 94, 1, 1);
 	}
 	.title {
 		margin: 0;
+		width: 190px;
 	}
 	.bio {
 		margin-top: 150px;
