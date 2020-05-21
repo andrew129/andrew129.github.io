@@ -264,6 +264,10 @@ img {
 	font-family: 'Yellowtail', cursive;
 }
 
+#hamburger, .header label {
+	display: none;
+}
+
 .btn {
 	margin: 5px;
 	transition: all ease-out;
@@ -298,9 +302,14 @@ img {
 		background: none;
 		box-shadow: 0 0 10px 13px rgb(104, 104, 253);
 	}
+	#hamburger, .header label {
+		display: block;
+	}
 	.navigation {
 		display: none;
 	}
+	.header input:checked ~ .navigation { display: block; }
+
 	.links {
 		display: none;
 	}
