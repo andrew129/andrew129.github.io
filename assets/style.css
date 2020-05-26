@@ -19,7 +19,7 @@
 	align-items: center;
 	text-decoration: none;
 	outline: none;
-	margin-right: 35px;
+	margin-right: 70px;
 }
 
 li a button {
@@ -36,6 +36,7 @@ li a button {
 	text-align: center;
 	outline: none;
 	font-size: 13px;
+	text-transform: uppercase;
 }
 
 li a button:hover {
@@ -199,6 +200,11 @@ html {
 	text-align: center;
 }
 
+.active-class {
+	filter: brightness(110%);
+	color: blue;
+}
+
 .outer-eclipse {
 	height: 640px;
 	width: 660px;
@@ -310,14 +316,15 @@ img {
 		font-size: 15px;
 	}
 	#ham-label {
-		display: inline-block;
+		display: block;
 		cursor: pointer;
 		font-size: 2em;
 		background-image: url(../assets/images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
-		background-position: 780px;
+		background-position: 700px;
 		-webkit-text-fill-color: transparent;
 		-webkit-background-clip: text !important;
 		background-clip: text;
+		margin-right: 20px;
 	}
 
 	.navigation {
@@ -328,27 +335,24 @@ img {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		height: 75px;
 	}
 
-	.hamburger-holder {
-		height: 100%;
-		border-left: solid white 1px;
-		width: 80px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	#ham-label:checked ~ .navigation { display: block; z-index: 1; margin-top: 280px; }
-
-	li a {
-		box-sizing: border-box;
-    	display: block;
-		text-decoration: none;
-	}
+	#hamburger:checked ~ .navigation { display: block; z-index: 1; position: relative; top: 145px; left: 70px; margin: 0;}
 
 	li a button {
 		border-radius: 0;
+		margin: 0;
+		opacity: 0.9;
+		position: relative;
+		bottom: 10px;
+	}
+
+	li a {
+		margin: 0;
+	}
+
+	li {
 		margin: 0;
 	}
 

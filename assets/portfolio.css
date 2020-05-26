@@ -35,6 +35,7 @@ li a button {
 	margin: 10px;
 	text-align: center;
 	font-size: 13px;
+	text-transform: uppercase;
 }
 
 @keyframes changePosition {

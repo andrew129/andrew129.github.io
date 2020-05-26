@@ -73,6 +73,7 @@ li a button {
 	text-align: center;
 	outline: none;
 	font-size: 13px;
+	text-transform: uppercase;
 }
 
 li a button:hover {
