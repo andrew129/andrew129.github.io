@@ -240,8 +240,6 @@ html {
 	flex-direction: column;
 	justify-content: center;
 	box-shadow: 17px 2px 22px 22px rgb(255, 251, 0);
-	animation: fadein 2s 1 ease-in;
-	animation-delay: 4s;
 }
 
 .img-container {
