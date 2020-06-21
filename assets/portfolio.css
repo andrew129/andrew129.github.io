@@ -12,6 +12,80 @@
 	margin-bottom: 40px;
 }
 
+.image-div {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	border-radius: 50%;
+}
+
+.project-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-links {
+	background: rgb(255, 251, 251);
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	color: black;
+	transition: all 0.5s linear;
+	font-size: 17px;
+	border-radius: 5%;
+}
+
+.lin-btn, .game-btn {
+	cursor: pointer;
+}
+
+.game-btn {
+	color: blue;
+	transition: all 0.5s;
+}
+
+.game-btn:hover {
+	color: rgb(11, 11, 105);
+}
+
+.project-links:hover {
+	border: 1px solid gray;
+	filter: brightness(140%);
+	-webkit-filter: brightness(140%);
+	-moz-filter: brightness(140%);
+	-o-filter: brightness(140%);
+	-ms-filter: brightness(140%);
+	background: rgb(255, 250, 250);
+	opacity: 0.9;
+}
+
+.check-out {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../assets/images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
+	background-position: 1000px 640px;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text !important;
+	background-clip: text;
+	font-weight: bold;
+}
+
+.image-div a {
+	width: 100%;
+}
+
 .navigation {
 	display: flex;
 	flex-direction: row;
@@ -55,17 +129,6 @@ li a button:hover {
 	animation: changePosition 2s ease-out alternate;
 	filter: brightness(110%);
 	outline: none;
-}
-
-ul {
-	display: flex;
-	list-style-type: none;
-	width: 350px;
-	flex-direction: row;
-	justify-content: space-around;
-	font-size: 20px;
-	text-decoration: none;
-	align-items: center;
 }
 
 li a:hover {
@@ -179,6 +242,7 @@ html {
 	border: solid 1px rgb(90, 90, 253);
 	padding-right: -2px;
 	box-shadow: 2px 2px 29px 10px rgba(255, 94, 1, 1);
+	margin-bottom: 40px;
 }
 
 #portfolio {
@@ -192,30 +256,12 @@ html {
 }
 
 img {
-	width: 300px;
-	height: 250px;
-	margin: 5px;
-	margin-top: 0;
-	margin-left: -25px;
-	margin-right: 40px;
+	width: 100%;
+	height: 100%;
 	border: 1px solid blue;
-	margin-bottom: 15px;
-	position: relative;
-	left: 2px;
-	bottom: 2px;
 	-webkit-transition: all 0.50s;
 	transition: all 0.50s;
-}
-
-img:hover {
-	border: 1px solid gray;
-	filter: brightness(140%);
-	-webkit-filter: brightness(140%);
-	-moz-filter: brightness(140%);
-	-o-filter: brightness(140%);
-	-ms-filter: brightness(140%);
-	-webkit-transition: all 0.50s;
-	transition: all 0.50s;
+	border-radius: 5%;
 }
 
 .btn {
@@ -231,7 +277,16 @@ img:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	width: 1000px;
 	flex-wrap: wrap;
+	padding: 10px;
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+}
+
+#work {
+	margin: 10px;
+	width: 300px;
+	height: 250px;
 }
 

@@ -132,6 +132,21 @@ li a button:hover {
 	justify-content: center;
 	width: 100vw;
 	align-items: center;
+	margin-bottom: 80px;
+}
+
+.skill-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background: rgb(241, 225, 225, 0.5);
+	width: 60%;
+	height: 350px;
+	border-radius: 30px;
+	-webkit-box-shadow: 1px 1px 7px 10px rgba(255, 94, 1, 1);
+	-moz-box-shadow: 1px 1px 7px 10px rgba(255, 94, 1, 1);
+	box-shadow: 1px 1px 7px 10px rgba(255, 94, 1, 1), 1px 1px 14px 20px rgb(255, 251, 0);
 }
 
 body {
@@ -225,6 +240,8 @@ html {
 	flex-direction: column;
 	justify-content: center;
 	box-shadow: 17px 2px 22px 22px rgb(255, 251, 0);
+	animation: fadein 2s 1 ease-in;
+	animation-delay: 4s;
 }
 
 .img-container {
@@ -237,10 +254,52 @@ html {
 	margin-top: 20px;
 }
 
+.skills {
+	list-style-type: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+}
+
+.skills li {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100px;
+	align-items: center;
+	margin: 20px;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text !important;
+	background-position: 600px 540px;
+	background-clip: text;
+	background-image: url(../assets/images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
+}
+
 img {
 	width: 100%;
 	height: 100%;
 	border-radius: 400px;
+}
+
+.skill-title {
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text !important;
+	background-clip: text;
+	background-image: url(../assets/images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
+	border-bottom: solid black 2px;
+	/* 40px */
+	background-position: 520px 38px; 
+	height: 20%;
+	margin-bottom: 5px;
 }
 
 .links {
@@ -261,6 +320,10 @@ img {
 	padding-left: 10px;
 	padding-right: 10px;
 	box-shadow: 6px 1px 45px 10px rgba(255, 94, 1, 1);
+}
+
+.image-div a {
+	
 }
 
 #sites {
@@ -301,6 +364,10 @@ img {
 		height: 820px;
 		box-shadow: 0 0 6px 14px rgba(255, 94, 1, 1);
 		background: rgb(241, 225, 225, 0.6);
+	}
+	.skill-section {
+		width: 80%;
+		height: 700px;
 	}
 	.outer-ring {
 		width: 260px;
@@ -379,7 +446,7 @@ img {
 	}
 	.img-container {
 		margin-top: 0px;
-		border-radius: 400px;
+		border-top-left-radius: 400px;
 		-webkit-box-shadow: 0 20px 25px 3px rgb(116, 116, 250);
 		-moz-box-shadow: 0 20px 25px 3px rgb(116, 116, 250);
 		box-shadow: 0 20px 25px 3px rgb(116, 116, 250);
@@ -387,7 +454,7 @@ img {
 		width: 170px;
 	}
 	img {
-		border-radius: 400px;
+		border-top-left-radius: 400px;
 	}
 	.about-me {
 		margin-top: 25px;
