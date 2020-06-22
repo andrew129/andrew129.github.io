@@ -269,6 +269,7 @@ html {
 	flex-direction: column;
 	justify-content: center;
 	height: 100px;
+	width: 100px;
 	align-items: center;
 	margin: 20px;
 	-webkit-text-fill-color: transparent;
@@ -276,6 +277,11 @@ html {
 	background-position: 600px 540px;
 	background-clip: text;
 	background-image: url(../assets/images/jenna-beekhuis-Bm0Ja6LZWl4-unsplash.jpg);
+}
+
+.skills li i {
+	box-shadow: 17px 16px 23px 2px black;
+	color: rgba(255, 94, 1, 1);
 }
 
 img {
