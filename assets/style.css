@@ -373,6 +373,10 @@ img {
 		width: 80%;
 		height: 700px;
 	}
+
+	.skill-title {
+		height: 10%;
+	}
 	.outer-ring {
 		width: 260px;
 		height: 850px;
