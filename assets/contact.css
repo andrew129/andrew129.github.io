@@ -76,6 +76,11 @@ li a button {
 	text-transform: uppercase;
 }
 
+.active-class {
+	filter: brightness(110%);
+	color: blue;
+}
+
 li a button:hover {
 	color: rgb(15, 6, 139);
 	animation: changePosition 2s ease-out alternate;

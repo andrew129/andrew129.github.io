@@ -83,6 +83,11 @@
 	font-weight: bold;
 }
 
+.active-class {
+	filter: brightness(110%);
+	color: blue;
+}
+
 .image-div a {
 	width: 100%;
 }
