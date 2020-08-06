@@ -77,14 +77,14 @@ li a button {
 }
 
 .active-class {
-	filter: brightness(110%);
+	filter: brightness(125%);
 	color: blue;
 }
 
 li a button:hover {
 	color: rgb(15, 6, 139);
 	animation: changePosition 2s ease-out alternate;
-	filter: brightness(110%);
+	filter: brightness(125%);
 	outline: none;
 }
 

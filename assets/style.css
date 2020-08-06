@@ -41,8 +41,8 @@ li a button {
 
 li a button:hover {
 	color: rgb(15, 6, 139);
-	animation: changePosition 2s ease-out alternate;
-	filter: brightness(110%);
+	animation: changePosition 1s ease-out alternate;
+	filter: brightness(125%);
 }
 
 @keyframes changePosition {
@@ -216,7 +216,7 @@ html {
 }
 
 .active-class {
-	filter: brightness(110%);
+	filter: brightness(125%);
 	color: blue;
 }
 
@@ -323,10 +323,6 @@ img {
 	padding-left: 10px;
 	padding-right: 10px;
 	box-shadow: 6px 1px 45px 10px rgba(255, 94, 1, 1);
-}
-
-.image-div a {
-	
 }
 
 #sites {
