@@ -120,20 +120,20 @@ li a button {
 
 @keyframes changePosition {
 	0% {
-		background-position-x: 125px;
+		background-position-x: 120px;
 	}
 	50% {
-		background-position-x: 200px;
+		background-position-x: 240px;
 	}
 	100% {
-		background-position-x: 250px;
+		background-position-x: 360px;
 	}
 }
 
 li a button:hover {
 	color: rgb(15, 6, 139);
 	animation: changePosition 2s ease-out alternate;
-	filter: brightness(125%);
+	filter: brightness(115%);
 	outline: none;
 }
 
