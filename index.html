@@ -116,46 +116,48 @@
         let image = document.querySelector('img')
 
         function slideShow() {
-            increment()
-            changePicture()
-            setInterval(increment, 4000)
-            setInterval(changePicture, 13000)
+            requestAnimationFrame(changePicture)
+            requestAnimationFrame(increment)
         }
 
+
+
         function changePicture() {
+            image.src = imageArr[imageCount]
             image.classList.remove('fade-out')
             image.classList.add('fade-in')
-            image.src = imageArr[imageCount]
+
+            if (imageCount === imageArr.length - 1) {
+                imageCount = 0
+            }
+            else {
+                imageCount++
+            }
+
             setTimeout(() => {
-                if (imageCount === imageArr.length - 1) {
-                    image.classList.remove('fade-in')
-                    imageCount = 0
+                image.classList.remove('fade-in')
+                setTimeout(() => {
+                    image.classList.add('fade-out')
                     setTimeout(() => {
-                        image.classList.add('fade-out')
-                    }, 3000)
-                }
-                else {
-                    image.classList.remove('fade-in')
-                    imageCount++
-                    setTimeout(() => {
-                        image.classList.add('fade-out')
-                    }, 3000)
-                }
-            }, 5000)
+                        requestAnimationFrame(changePicture)
+                    }, 6000)
+                }, 4000)
+            }, 6000)
         }
 
         function increment() {
             position.textContent = positionArr[count]
-            if (count === positionArr.length - 1) {
-                count = 0
-            }
-            else {
-                count++
-            }
+            setTimeout(() => {
+                if (count === positionArr.length - 1) {
+                    count = 0
+                }
+                else {
+                    count++
+                }
+                requestAnimationFrame(increment)
+            }, 2500)
         }
-
         slideShow()
-
     </script>
 </body>
 </html>

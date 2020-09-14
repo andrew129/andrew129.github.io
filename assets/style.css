@@ -104,25 +104,23 @@ li a button:hover {
 
 .fade-in {
 	opacity: 0;
-	animation: fadein 5s ease-in-out;
+	animation: fadein 6s ease-in-out both;
 	animation-iteration-count: 1;
 }
 
 .fade-out {
 	opacity: 1;
-	animation: fadeout 5s ease-in-out;
+	animation: fadeout 6s ease-in-out both;
 	animation-iteration-count: 1;
 }
 
 @keyframes fadein {
 	0%{opacity: 0}
-	50%{opacity: 0.5}
 	100%{opacity: 1}
 }
 
 @keyframes fadeout {
 	0%{opacity: 1}
-	50%{opacity: 0.5}
 	100%{opacity: 0}
 }
 
@@ -191,7 +189,7 @@ html {
 }
 
 #paragraph {
-	line-height: 20px;
+	line-break: loose;
 	font-size: 16px;
 }
 
@@ -246,9 +244,7 @@ html {
 	width: 200px;
 	height: 150px;
 	border-radius: 400px;
-	-webkit-box-shadow: 10px 17px 30px 3px rgb(116, 116, 250);
-	-moz-box-shadow: 10px 17px 30px 3px rgb(116, 116, 250);
-	box-shadow: 10px 17px 30px 3px rgb(116, 116, 250);
+	box-shadow: 10px 20px 40px 3px rgb(116, 116, 250);
 	margin-top: 20px;
 }
 
