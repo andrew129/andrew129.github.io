@@ -129,7 +129,7 @@
     }
     .lead {
       font-size: 16px;
-      color: rgb(167, 168, 168);
+      color: rgb(204, 207, 207);
     }
     .nav-item svg:hover {
       transform: translateY(2px);
@@ -180,6 +180,13 @@
       animation-duration: 1s;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
+    }
+    a {
+      text-decoration: none;
+      transition: text-decoration 0.3s;
+    }
+    .card-footer a:hover {
+      text-decoration: underline;
     }
   </style>
     <nav class="navbar navbar-expand-lg mb-5" style='height: 100px;'>
@@ -249,12 +256,8 @@
                 </div>
                 <div style='width: 90%;' class='text d-flex align-items-center p-4 flex-column'>
                   <p class='lead'>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium rem architecto, nobis a qui quos sequi explicabo facilis hic nesciunt voluptatibus harum, expedita doloribus voluptates deleniti asperiores consectetur odit cumque?
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium rem architecto, nobis a qui quos sequi explicabo facilis hic nesciunt voluptatibus harum, expedita doloribus voluptates deleniti asperiores consectetur odit cumque?
+                    Throughout my time in the coding bootcamp at UCF, I have developed skills in HTML, CSS and especially Javascript. I have successfully learned how to incorporate interactivity to web pages in both the front end as well as the back end, by creating my own servers. My greatest strengths are my ability to persevere even when a project gets tough and my strict attention to detail. One of my greatest accomplishments was building my own photography website called Phocus. I built the front and back end by myself and implemented strategies I learned in the bootcamp. In addition to my skills in full stack web development, I am also a musician and composer. My music can be found by clicking the soundcloud link above.
                   </p>
-                  <!-- <p class='lead'>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium rem architecto, nobis a qui quos sequi explicabo facilis hic nesciunt voluptatibus harum, expedita doloribus voluptates deleniti asperiores consectetur odit cumque?
-                  </p> -->
                 </div>
               
             </div>
@@ -272,68 +275,92 @@
             <div class='card-area w-100 d-flex justify-content-center flex-wrap'>
                 <div class="card" style="width: 18rem;">
                     <div style='position: relative; width: 100%; '>
-                      <img src="./images/beach-sunset.jpg" class="card-img-top" alt="...">
+                      <img src="./assets/images/card-memory-game.png" class="card-img-top" alt="...">
                       <div style='width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 100%; display: flex; justify-content: center; align-items: center;' class='caption-container'>
                         <h3 class='text-white project-title'>Card Memory Game</h3>
                       </div>
                     </div>
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="card-text">A card memory game built with react.  See how many matches you can get in the time limit.</p>
+                    </div>
+                    <div class="card-footer text-muted d-flex justify-content-between">
+                      <a target='_blank' class='text-white' href='https://github.com/andrew129/React-Chord-App-Version-2'>Check out the code</a>
+                      <a target='_blank' class='text-white' href='#'>Try it out!</a>
                     </div>
                   </div>
                   <div class="card" style="width: 18rem; position: relative;">
                     <div style='position: relative; width: 100%; '>
-                      <img src="./images/beach-sunset.jpg" class="card-img-top" alt="...">
+                      <img src="./assets/images/word-guess-game.png" class="card-img-top" alt="...">
                       <div style='width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 100%; display: flex; justify-content: center; align-items: center;' class='caption-container'>
-                        <h3 class='text-white project-title project-title'>Card Memory Game</h3>
+                        <h3 class='text-white project-title project-title'>Word Guess Game</h3>
                       </div>
                     </div>
                       <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Try to guess the mystery word outlined with blanks.  Built with vanilla javascript.</p>
+                      </div>
+                      <div class="card-footer text-muted d-flex justify-content-between">
+                        <a target='_blank' class='text-white' href='https://github.com/andrew129/Word-Guess-Game'>Check out the code</a>
+                        <a target='_blank' class='text-white' href='https://andrew129.github.io/Word-Guess-Game/'>Try it out!</a>
                       </div>
                     </div>
                     <div class="card" style="width: 18rem;">
                       <div style='position: relative; width: 100%; '>
-                        <img src="./images/beach-sunset.jpg" class="card-img-top" alt="...">
+                        <img src="./assets/images/Google-Books-Search.png" class="card-img-top" alt="...">
                         <div style='width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 100%; display: flex; justify-content: center; align-items: center;' class='caption-container'>
-                          <h3 class='text-white project-title'>Chord Factory</h3>
+                          <h3 class='text-white project-title'>Google Books Search</h3>
                         </div>
                       </div>
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p class="card-text">A simple book search app using the google books api.  Allows you to search for and save any book to your collecton.  App created using vanilla javascript and CSS.</p>
+                        </div>
+                        <div class="card-footer text-muted d-flex justify-content-between">
+                          <a target='_blank' class='text-white' href='https://github.com/andrew129/React-Chord-App-Version-2'>Check out the code</a>
+                          <a target='_blank' class='text-white' href='#'>Try it out!</a>
                         </div>
                       </div>
                       <div class="card" style="width: 18rem;">
                         <div style='position: relative; width: 100%; '>
-                          <img src="./images/beach-sunset.jpg" class="card-img-top" alt="...">
+                          <img src="./assets/images/circle.png" class="card-img-top" alt="...">
                           <div style='width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 100%; display: flex; justify-content: center; align-items: center;' class='caption-container'>
-                            <h3 class='text-white project-title'>Card Memory Game</h3>
+                            <h3 class='text-white project-title'>Catch the Circle Game</h3>
                           </div>
                         </div>
                           <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Simple game where you just have to come into contact with the circle to get the point.  Controlled with the arrow keys.  A current work in progress.</p>
+                          </div>
+                          <div class="card-footer text-muted d-flex justify-content-between">
+                            <a target='_blank' class='text-white' href='https://github.com/andrew129/React-Chord-App-Version-2'>Check out the code</a>
+                            <a target='_blank' class='text-white' href='#'>Try it out!</a>
                           </div>
                         </div>
                         <div class="card" style="width: 18rem;">
                           <div style='position: relative; width: 100%; '>
-                            <img src="./images/beach-sunset.jpg" class="card-img-top" alt="...">
+                            <img src="./assets/images/Chord-Generator-App.png" class="card-img-top" alt="...">
                             <div style='width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 100%; display: flex; justify-content: center; align-items: center;' class='caption-container'>
-                              <h3 class='text-white project-title'>Card Memory Game</h3>
+                              <h3 class='text-white project-title'>Chord Generator App</h3>
                             </div>
                           </div>
                             <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <p class="card-text">Application I made to help musicians share their favorite chords with the community.  Built with react and of course lots of CSS.</p>
+                            </div>
+                            <div class="card-footer text-muted d-flex justify-content-between">
+                              <a target='_blank' class='text-white' href='https://github.com/andrew129/React-Chord-App-Version-2'>Check out the code</a>
+                              <a target='_blank' class='text-white' href='#'>Try it out!</a>
                             </div>
                           </div>
                           <div class="card" style="width: 18rem;">
                             <div style='position: relative; width: 100%; '>
-                              <img src="./images/beach-sunset.jpg" class="card-img-top" alt="...">
+                              <img src="./assets/images/phocus-photography.png" class="card-img-top" alt="...">
                               <div style='width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 100%; display: flex; justify-content: center; align-items: center;' class='caption-container'>
-                                <h3 class='text-white project-title'>Card Memory Game</h3>
+                                <h3 class='text-white project-title'>Phocus Photography</h3>
                               </div>
                             </div>
                               <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text">Photography website I made.  You can upload your photos and like other photos.  Built with react.</p>
+                              </div>
+                              <div class="card-footer text-muted d-flex justify-content-between">
+                                <a target='_blank' class='text-white' href='https://github.com/andrew129/React-Chord-App-Version-2'>Check out the code</a>
+                                <a target='_blank' class='text-white' href='#'>Try it out!</a>
                               </div>
                             </div>
             </div>
@@ -348,7 +375,7 @@
                   Contact
                 <svg class='large-star' style='height: 20px; width: 20px; fill: rgb(229, 255, 0); filter: drop-shadow(-700px 23px 0.9px #eeff02); z-index: 10; position: absolute; right: -100px;' x="0px" y="0px" viewBox="0 0 122.88 122.88" xml:space="preserve"><g><path class="st0" d="M62.43,122.88h-1.98c0-16.15-6.04-30.27-18.11-42.34C30.27,68.47,16.16,62.43,0,62.43v-1.98 c16.16,0,30.27-6.04,42.34-18.14C54.41,30.21,60.45,16.1,60.45,0h1.98c0,16.15,6.04,30.27,18.11,42.34 c12.07,12.07,26.18,18.11,42.34,18.11v1.98c-16.15,0-30.27,6.04-42.34,18.11C68.47,92.61,62.43,106.72,62.43,122.88L62.43,122.88z"/></g></svg>
             </h1>
-              <form class='w-100'>
+              <form action='https://formsubmit.co/ndrwstls544@gmail.com' class='w-100' method='POST'>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label text-white">Your Email</label>
                   <input type="email" class="form-control text-white" id="exampleInputEmail1" placeholder="Enter Email..." aria-describedby="emailHelp">
@@ -375,6 +402,7 @@
     
   </style>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  
   <script>
     for (let i = 0; i < 4500; i++) {
         var newDiv = document.createElement('div')
@@ -399,6 +427,38 @@
         }
         return numberArr
     }
+
+    function sendEmail(e) {
+            const name = document.getElementById('yourname').value.trim()
+            const email = document.getElementById('email').value.trim()
+            const message = document.getElementById('message').value.trim()
+            const status = document.getElementById('status')
+
+            name.value = ''
+            email.value = ''
+            message.value = ''
+            status.textContent = ''
+
+            if (name !== '' && email !== '' && message !== '' && email.includes('@') && email.includes('.') && message.length > 5 && name.length > 2) {
+              console.log('submit')
+            }
+            else if (name === '' || email === '' || message === '') {
+                e.preventDefault()
+                status.textContent = 'Error: Make sure all fields are filled out'
+            }
+            else if (!email.includes('@') || !email.includes('.')) {
+                e.preventDefault()
+                status.textContent = 'Error: Your email is invalid'
+            }
+            else if (message.length < 5) {
+                e.preventDefault()
+                status.textContent = 'Error: Your Message is too short'
+            }
+            else if (name.length < 2) {
+                e.preventDefault()
+                status.textContent = 'Error: Your Subject is too Short'
+            }
+        }
 
   </script>
 </body>
